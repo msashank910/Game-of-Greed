@@ -23,3 +23,6 @@ isRolling = false;         // Whether the player is currently rolling
 rollDuration = 0;          // Countdown timer for how long the roll lasts
 maxRollDuration = distanceroll / speedroll; // Time to complete a roll, based on distance and speed
 lastDirection = 0;         // Last direction the player moved in
+
+//tilemap
+wallTileMap = layer_tilemap_get_id("Col")
