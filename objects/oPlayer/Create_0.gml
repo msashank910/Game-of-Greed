@@ -2,7 +2,7 @@
 image_speed = 0;
 hspeed = 0;
 vspeed = 0;
-speedwalk = 0.25;  // Walking speed
+speedwalk = 0.50;  // Walking speed
 speedroll = 0.75;  // Rolling speed (adjust as needed)
 distanceroll = 35; // Distance covered during the roll (adjust as needed)
 
