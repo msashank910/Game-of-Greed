@@ -18,9 +18,9 @@
     {"$GMRTileLayer":"","%Name":"Col","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
           -21,1,-7,-2147483648,-2,1,-2,-2147483648,-2,1,-5,-2147483648,1,1,-8,-2147483648,-2,1,-2,-2147483648,
           -2,1,-2,-2147483648,-2,1,2,-2147483648,1,-5,-2147483648,1,1,-6,-2147483648,-2,1,-2,-2147483648,-2,1,
-          3,-2147483648,1,1,-11,-2147483648,-2,1,-5,-2147483648,-4,1,-15,-2147483648,-5,1,-17,-2147483648,1,1,
-          -3,-2147483648,1,1,-15,-2147483648,-3,1,-16,-2147483648,-4,1,-5,-2147483648,1,1,-4,-2147483648,1,1,-5,
-          -2147483648,-11,1,-2,-2147483648,-8,1,-20,-2147483648,
+          3,-2147483648,1,1,-11,-2147483648,-2,1,-5,-2147483648,-4,1,-10,-2147483648,1,0,-4,-2147483648,-5,1,-17,
+          -2147483648,1,1,-3,-2147483648,1,1,-15,-2147483648,-3,1,-16,-2147483648,-4,1,-5,-2147483648,1,1,-4,-2147483648,
+          1,1,-5,-2147483648,-11,1,-2,-2147483648,-8,1,-20,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tilesupper","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"name":"Tilesupper","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
           1,113,-18,114,2,115,145,-5,146,-2,-2147483648,7,77,78,-2147483648,-2147483648,77,78,46,-4,-2147483648,
@@ -58,7 +58,7 @@
   "roomSettings":{
     "Height":180,
     "inheritRoomSettings":false,
-    "persistent":false,
+    "persistent":true,
     "Width":320,
   },
   "sequenceId":null,

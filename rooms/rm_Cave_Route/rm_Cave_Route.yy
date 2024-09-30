@@ -15,10 +15,11 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Col","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
           -283,-2147483648,-4,0,-17,-2147483648,-3,0,-17,-2147483648,-4,0,-16,-2147483648,-4,0,-18,-2147483648,
-          -2,0,-194,-2147483648,-2,1,-18,-2147483648,-2,1,-16,-2147483648,1,1,-19,-2147483648,1,1,-19,-2147483648,
-          1,1,-59,-2147483648,1,1,-19,-2147483648,1,1,-19,-2147483648,1,1,-59,-2147483648,
+          -2,0,-194,-2147483648,-2,0,-18,-2147483648,-2,0,-16,-2147483648,-3,0,-17,-2147483648,1,0,-5,1,-14,-2147483648,
+          6,0,1,-2147483648,0,0,1,-17,-2147483648,-2,0,1,1,-17,-2147483648,-2,0,1,1,-14,-2147483648,1,0,-5,1,-14,
+          -2147483648,-3,0,-17,-2147483648,-3,0,-57,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tileupper","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tileupper","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tilesupper","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tilesupper","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
           1,33,-18,18,2,19,33,-8,-2147483648,4,131,-2147483648,-2147483648,129,-6,-2147483648,22,35,33,-2147483648,
           61,-2147483648,77,78,-2147483648,45,-2147483648,131,-2147483648,62,129,97,77,78,-2147483648,46,-2147483648,
           35,33,-3,-2147483648,2,93,94,-3,97,7,131,62,97,129,61,93,94,-3,-2147483648,14,35,33,-2147483648,77,78,
@@ -53,7 +54,7 @@
           33,-2147483648,45,-2147483648,-2147483648,93,94,45,-2147483648,93,94,-3,-2147483648,7,45,-2147483648,
           93,94,-2147483648,35,33,-18,-2147483648,2,35,49,-18,50,1,51,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tTileset2","path":"tilesets/tTileset2/tTileset2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"TileMain","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TileMain","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"TilesMain","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TilesMain","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
           -21,106,-8,130,-4,34,-6,130,-2,106,-8,130,-4,34,-6,130,2,106,90,-8,130,-4,34,-6,130,2,106,90,-8,130,
           -4,34,-6,130,2,106,15,-8,130,-3,34,-7,130,4,106,15,130,130,-10,34,-6,130,4,106,15,130,130,-10,34,-6,
           130,4,106,15,130,130,-10,34,-6,130,4,106,15,130,130,-4,34,-12,130,4,106,15,130,130,-4,34,-12,130,4,106,
@@ -86,7 +87,7 @@
   "roomSettings":{
     "Height":640,
     "inheritRoomSettings":false,
-    "persistent":false,
+    "persistent":true,
     "Width":320,
   },
   "sequenceId":null,
