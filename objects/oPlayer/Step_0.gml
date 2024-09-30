@@ -72,17 +72,13 @@ if (isRolling) {
     image_index = round(lastDirection / 90) % 4;
 }
 
-// Player collision detection (as in your original code)
-// Horizontal and vertical movement with collision detection
+
 var _collision = false;
 var tileSize = 16;  // Assuming your tile size is 16x16
-
-
-// Horizontal movement and collision handling
-// Define a maximum step size to handle high speed
 var stepSize = 1;  // Move one pixel at a time for collision detection
 
-// Horizontal movement and collision handling
+//TEMP FIX, UPDATES COLLISION EVERY STEP
+wallTileMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
 
 
 if (hspeed != 0) {
