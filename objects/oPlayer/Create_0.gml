@@ -16,7 +16,7 @@ image_index = 0;           // Start at the first frame of the animation
 localFrame = 0;            // Initialize localFrame for animation tracking
 ROOM_SPEED = 60;           // Frame rate (room speed)
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
+wallTileMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
 
 // Variables to manage rolling
 isRolling = false;         // Whether the player is currently rolling
@@ -25,4 +25,4 @@ maxRollDuration = distanceroll / speedroll; // Time to complete a roll, based on
 lastDirection = 0;         // Last direction the player moved in
 
 //tilemap
-wallTileMap = layer_tilemap_get_id("Col")
+//wallTileMap = layer_tilemap_get_id("Col")

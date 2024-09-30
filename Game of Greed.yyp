@@ -53,6 +53,7 @@
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
     {"id":{"name":"sTileset2","path":"sprites/sTileset2/sTileset2.yy",},},
     {"id":{"name":"sTilesets","path":"sprites/sTilesets/sTilesets.yy",},},
+    {"id":{"name":"sTransition","path":"sprites/sTransition/sTransition.yy",},},
     {"id":{"name":"sTransition1","path":"sprites/sTransition1/sTransition1.yy",},},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},},
     {"id":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},},
