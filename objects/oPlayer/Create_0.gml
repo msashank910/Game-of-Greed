@@ -2,7 +2,7 @@
 image_speed = 0;
 hspeed = 0;
 vspeed = 0;
-speedwalk = 0.25;  // Walking speed
+speedwalk = 0.50;  // Walking speed
 speedroll = 0.75;  // Rolling speed (adjust as needed)
 distanceroll = 35; // Distance covered during the roll (adjust as needed)
 
@@ -16,7 +16,7 @@ image_index = 0;           // Start at the first frame of the animation
 localFrame = 0;            // Initialize localFrame for animation tracking
 ROOM_SPEED = 60;           // Frame rate (room speed)
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
+wallTileMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
 
 // Variables to manage rolling
 isRolling = false;         // Whether the player is currently rolling
@@ -25,4 +25,4 @@ maxRollDuration = distanceroll / speedroll; // Time to complete a roll, based on
 lastDirection = 0;         // Last direction the player moved in
 
 //tilemap
-wallTileMap = layer_tilemap_get_id("Col")
+//wallTileMap = layer_tilemap_get_id("Col")
