@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UpdateAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UpdateAnimation",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
