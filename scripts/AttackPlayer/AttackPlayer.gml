@@ -1,3 +1,3 @@
-function AttackPlayer(){	//hi
-
+function AttackPlayer(attackSlash){	
+	
 }

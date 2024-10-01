@@ -26,3 +26,10 @@ lastDirection = 0;         // Last direction the player moved in
 
 //tilemap
 //wallTileMap = layer_tilemap_get_id("Col")
+
+//Health and Attacks
+playerHealth = 100;
+attackSlash = 25;
+
+//Inventory
+playerCoins = 0;

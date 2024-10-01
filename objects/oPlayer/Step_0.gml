@@ -5,7 +5,7 @@ Controller();
 // Manage rolling state
 if(!RollPlayer()) {
     MovePlayer();
-	AttackPlayer();
+	//AttackPlayer();
 }
 
 UpdateAnimation();
