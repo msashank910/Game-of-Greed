@@ -10,5 +10,4 @@ if(!RollPlayer()) {
 
 UpdateAnimation();
 
-var stepSize = 1;  // Move one pixel at a time for collision detection
-CollisionUpdate(TILE_SIZE, stepSize);
+CollisionUpdate(TILE_SIZE, 1);
