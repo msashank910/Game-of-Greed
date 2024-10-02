@@ -75,10 +75,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_Town_First","path":"rooms/rm_Town_First/rm_Town_First.yy",},},
     {"roomId":{"name":"rm_First_Area","path":"rooms/rm_First_Area/rm_First_Area.yy",},},
-    {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
     {"roomId":{"name":"rm_Cave_Route","path":"rooms/rm_Cave_Route/rm_Cave_Route.yy",},},
+    {"roomId":{"name":"rm_Town_First","path":"rooms/rm_Town_First/rm_Town_First.yy",},},
+    {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
