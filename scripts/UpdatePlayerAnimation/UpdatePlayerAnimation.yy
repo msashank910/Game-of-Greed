@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UpdateAnimation",
+  "%Name":"UpdatePlayerAnimation",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UpdateAnimation",
+  "name":"UpdatePlayerAnimation",
   "parent":{
     "name":"Player",
     "path":"folders/Scripts/Player.yy",

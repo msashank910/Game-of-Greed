@@ -9,6 +9,7 @@ distanceroll = 35; // Distance covered during the roll (adjust as needed)
 spriteIdle = sPlayerIdle;  // Idle sprite with 4 frames (1 frame per direction)
 spriteRun = sPlayerRun;    // Running sprite with 32 frames (covering all directions)
 spriteRoll = sPlayerRoll;  // Rolling sprite
+spriteAttack = sPlayerAttackSlash
 
 sprite_index = spriteIdle; // Start with idle sprite by default
 image_index = 0;           // Start at the first frame of the animation
@@ -27,9 +28,25 @@ lastDirection = 0;         // Last direction the player moved in
 //tilemap
 //wallTileMap = layer_tilemap_get_id("Col")
 
+// State Initialization
+states = {
+	idle : new State (sPlayerIdle),
+	run : new State (sPlayerRun),
+	roll : new State (sPlayerRoll),
+	attack : new State (sPlayerAttackSlash)
+}
+
+states.attack.StateOnEnd(states.idle);
+states.roll.StateOnEnd(states.idle);
+
+state = states.idle;
+
 //Health and Attacks
-playerHealth = 100;
-attackSlash = 25;
+hp = 100;
+isAttacking = false;
+attack = 25;
+hitByAttack = ds_list_create();
+
 
 //Inventory
 playerCoins = 0;
