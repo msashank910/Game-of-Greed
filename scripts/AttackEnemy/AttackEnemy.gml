@@ -1,4 +1,4 @@
-function AttackPlayer(){
+function AttackEnemy(){
 	if(!keyAttack) {
 		return;
 	}

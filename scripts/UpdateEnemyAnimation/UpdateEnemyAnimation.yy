@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"CollisionUpdate",
+  "%Name":"UpdateEnemyAnimation",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"CollisionUpdate",
+  "name":"UpdateEnemyAnimation",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Enemies",
+    "path":"folders/Scripts/Enemies.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

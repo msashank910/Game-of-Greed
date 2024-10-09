@@ -9,7 +9,7 @@ if (keyActivate && state != states.roll && state != states.attack) {
 
 // If the player initiates an attack and is not currently rolling or attacking
 if (keyAttack && state != states.roll && state != states.attack) {
-    state_set(states.attack);
+    AttackPlayer();
 }
 
 // Only allow player movement when not rolling or attacking

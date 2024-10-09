@@ -44,7 +44,7 @@ state = states.idle;
 //Health and Attacks
 hp = 100;
 isAttacking = false;
-attack = 25;
+attackPower = 25;
 hitByAttack = ds_list_create();
 
 
