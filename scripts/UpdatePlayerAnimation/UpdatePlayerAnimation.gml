@@ -54,6 +54,9 @@ function UpdatePlayerAnimation(){
 		image_index = floor(localFrame) % sprite_get_number(state.sprite);
 		
 		if (floor(localFrame) >= sprite_get_number(state.sprite)) {
+			 with (oHitbox) {
+			    instance_destroy();
+			}
 			state_set(state.stateOnEnd);
 		}
 	} 

@@ -1,19 +1,15 @@
 
 function UpdateEnemyAnimation(){
 	// Update animation based on state
-	if (state == states.death) {
-		// Rolling animation should continue playing while rolling
-		//localFrame += sprite_get_speed(state.sprite) / ROOM_SPEED;
-		//image_index = floor(localFrame) % sprite_get_number(spriteRoll); // Cycling through rolling frames
-		
+	if(state == states.death) {
 		localFrame += sprite_get_speed(state.sprite) / ROOM_SPEED;
-	    image_index = floor(localFrame) % sprite_get_number(state.sprite);
+		image_index = floor(localFrame) % sprite_get_number(state.sprite);
 		
-		if (localFrame >= 6) {
+		if (localFrame >= sprite_get_number(state.sprite)) {
 			instance_destroy();
 		}
 	}
-	else if (state == states.hurt) {
+	else if (state == states.hurt) {	//FIX THIS
 		// Running animation
 		localFrame += sprite_get_speed(state.sprite) / ROOM_SPEED;
 		image_index = (round(lastDirection / 90) % 4) * 8 + (floor(localFrame) % 8); // Use cardinal directions for running
@@ -30,17 +26,11 @@ function UpdateEnemyAnimation(){
 			state_set(state.stateOnEnd);
 		}
 	} 
-	else if (state == states.walk) {
+	else if (state == states.pursue || state == states.returnHome || state == states.idle) {
 		// Running animation
 		localFrame += sprite_get_speed(state.sprite) / ROOM_SPEED;
 		image_index = (round(lastDirection / 90) % 4) * 8 + (floor(localFrame) % 8); // Use cardinal directions for running
 	} 
-	
-	else if (state == states.idle){
-		// Idle animation, showing only the idle frame
-		localFrame += sprite_get_speed(state.sprite) / ROOM_SPEED;
-		image_index = (round(lastDirection / 90) % 4) * 8 + (floor(localFrame) % 8); // Use cardinal directions for running
-	}
 	else {
 		//State is undefined
 		show_debug_message("State is undefined: " + string(state));

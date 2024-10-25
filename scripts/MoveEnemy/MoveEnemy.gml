@@ -1,33 +1,27 @@
 
-function MoveEnemy(){
-    // Check for state transitions based on input magnitude
-    if (inputMagnitude > 0) {
-        if (state == states.idle) {
-            // Transition from idle to running state
-            state_set(states.walk);
-        }
-    } else {
-        if (state == states.walk) {
-            // Transition from running to idle state when no input
-            state_set(states.idle);
+function MoveEnemy(dx, dy){
+	// Handle horizontal movement (dx)
+    if (dx != 0) {
+        var _dir = (dx > 0) ? 0 : 180; // Right (0°) or Left (180°)
+        var move_amount = floor(abs(dx)) + 0.000001;
+        move_contact_solid(_dir, move_amount);
+        
+        // Fractional movement
+        if (random(1) < frac(abs(dx))) {
+            move_contact_solid(_dir, 1);
         }
     }
 
-    // Perform behavior based on current state
-    switch (state) {
-        case states.idle:
-            // Handle idle logic
-            hspeed = 0;
-            vspeed = 0;
-            // Set idle animation (if necessary)
-            //sprite_index = spriteIdle;  // Optional if not set elsewhere
-            break;
+    // Handle vertical movement (dy)
+    if (dy != 0) {
+        var _dir = (dy > 0) ? 270 : 90; // Down (270°) or Up (90°)
+        var move_amount = floor(abs(dy)) + 0.000001;
+        move_contact_solid(_dir, move_amount);
+        
+        // Fractional movement
+        if (random(1) < frac(abs(dy))) {
+            move_contact_solid(_dir, 1);
+        }
+    }
 
-        case states.walk:
-            // Handle running logic
-            hspeed = lengthdir_x(speedwalk, inputDirection);
-            vspeed = lengthdir_y(speedwalk, inputDirection);
-            lastDirection = inputDirection;
-            break;
-	}
 }

@@ -1,0 +1,9 @@
+Notes on states:
+
+- Possibly consider "owner" or hitbox.type to assign hitboxes so taht way all hitboxes aren't destroyed in playerUpdateAnimation.
+
+Todo:
+- when PlayerHitbox collides with Parent_Enemy hitbox --> player.health -= _enemy.attack
+- fix speeds
+- fix enemy ignoring collisions when moving
+- fix enemy weird buggy movement

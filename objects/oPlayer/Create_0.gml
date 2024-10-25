@@ -15,7 +15,7 @@ sprite_index = spriteIdle; // Start with idle sprite by default
 image_index = 0;           // Start at the first frame of the animation
 
 localFrame = 0;            // Initialize localFrame for animation tracking
-ROOM_SPEED = 60;           // Frame rate (room speed)
+ROOM_SPEED = FRAME_RATE;           // Frame rate (room speed)
 
 wallTileMap = layer_tilemap_get_id(layer_get_id("Col")); // Collision layer
 
@@ -44,7 +44,7 @@ state = states.idle;
 //Health and Attacks
 hp = 100;
 isAttacking = false;
-attackPower = 25;
+attackPower = 10;
 hitByAttack = ds_list_create();
 
 

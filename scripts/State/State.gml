@@ -25,7 +25,7 @@ function state_set (_state) {
 function state_set_attack (_state) {
 	state_set(_state);
 	
-	var _hitbox = instance_create_depth(x, y, depth, oHitbox);
-	_hitbox.sprite_index = sprite_index;
-	_hitbox.image_xscale = image_xscale;
+	//var _hitbox = instance_create_depth(x, y, depth, oHitbox);
+	//_hitbox.sprite_index = sprite_index;
+//	_hitbox.image_xscale = image_xscale;
 }
