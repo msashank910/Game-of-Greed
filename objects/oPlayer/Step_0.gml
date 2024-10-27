@@ -2,6 +2,8 @@
 // Initialize Controller
 Controller();
 
+--invincibleTimer;
+
 // If the player initiates a roll and the current state is not already rolling or attacking
 if (keyActivate && state != states.roll && state != states.attack) {
     state_set(states.roll);

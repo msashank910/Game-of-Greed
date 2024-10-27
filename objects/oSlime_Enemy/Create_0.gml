@@ -6,7 +6,8 @@ attack = 20;
 move_direction = irandom(359);
 home_radius = 100;
 move_speed = 0.5;
-hurtTimer = 10;
+hurtTimer = 10;			//not used	
+randomTimer = 0;
 
 
 states.idle = new State (sSlime_EnemyIdle);

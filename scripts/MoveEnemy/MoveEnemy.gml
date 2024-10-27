@@ -1,4 +1,4 @@
-
+/*
 function MoveEnemy(dx, dy){
 	// Handle horizontal movement (dx)
     if (dx != 0) {
@@ -24,4 +24,23 @@ function MoveEnemy(dx, dy){
         }
     }
 
+}
+*/
+
+function MoveEnemy(dx, dy) {
+    // Handle horizontal movement (dx)
+    if (dx != 0) {
+        var _new_x = x + dx;
+        if (!position_meeting(_new_x, y, wallTileMap)) {
+            x = _new_x;
+        }
+    }
+
+    // Handle vertical movement (dy)
+    if (dy != 0) {
+        var _new_y = y + dy;
+        if (!position_meeting(x, _new_y, wallTileMap)) {
+            y = _new_y;
+        }
+    }
 }

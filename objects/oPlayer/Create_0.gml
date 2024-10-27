@@ -33,7 +33,8 @@ states = {
 	idle : new State (sPlayerIdle),
 	run : new State (sPlayerRun),
 	roll : new State (sPlayerRoll),
-	attack : new State (sPlayerAttackSlash)
+	attack : new State (sPlayerAttackSlash),
+	death : new State (sPlayerRoll)
 }
 
 states.attack.StateOnEnd(states.idle);
@@ -46,6 +47,7 @@ hp = 100;
 isAttacking = false;
 attackPower = 10;
 hitByAttack = ds_list_create();
+invincibleTimer = 0;
 
 
 //Inventory

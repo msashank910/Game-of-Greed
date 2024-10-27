@@ -14,6 +14,8 @@ hp = 1;
 attack = 1;
 attackable = true;
 hurtTimer = 10;
+randomTimer = 0;
+
         
 image_index = 0;           // Start at the first frame of the animation
 localFrame = 0;
