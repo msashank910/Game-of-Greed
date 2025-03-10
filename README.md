@@ -10,7 +10,7 @@ Features a main character with a sword attack, multiple rooms, and basic enemy A
 
 ## Installation
 1. Clone the repo:
-   git clone https://github.com/yourusername/Greed.git
+   git clone https://github.com/msashank910/Greed.git
 2. Open the project in GameMaker.
 3. Run the game using the GameMaker IDE.
 
